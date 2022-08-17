@@ -1,159 +1,157 @@
-*
-{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-}
-body
-{
-    background-image: url('images/bg-desktop.png');
+  }
+  body {
+    background-image: url("images/bg-desktop.png");
     background-color: hsl(229, 57%, 11%);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     background-position: left top 30rem;
     color: white;
-}
-#boxes
-{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #boxes {
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
     margin: auto;
-    margin-top:24rem ;
-}
- .first
-{
-    background:  hsl(228, 56%, 26%);
+    margin-top: 24rem;
+  }
+  .first {
+    background: hsl(228, 56%, 26%);
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     gap: 1.5rem;
     flex-direction: column;
-     padding: 3rem 10rem 2rem 2rem; 
+    padding: 3rem 10rem 2rem 2rem;
     width: fit-content;
     /* margin:24rem auto auto 24rem; */
     border-radius: 5px;
-    border-top-right-radius: 95px;  
-} 
-.logo
-{
+    border-top-right-radius: 95px;
+  }
+  .logo {
     padding-right: 5rem;
-}
-.icons ul
-{
+  }
+  .icons ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-
-}
-.icons ul li
-{
-    background-color:  hsl(229, 57%, 11%);
-    padding:1rem ;
+  }
+  .icons ul li {
+    background-color: hsl(229, 57%, 11%);
+    padding: 1rem;
     border-radius: 20px;
-}
-.sec
-{
+  }
+  .sec {
     background-color: hsl(228, 56%, 26%);
     width: 40rem;
-    padding:1rem  0;
+    padding: 1rem 0;
     /* margin:-10.2rem auto auto 53rem; */
     border-radius: 15px;
-}
-.sec p
-{   
+  }
+  .sec p {
     padding: 1rem;
-    letter-spacing:0.2rem ;
+    letter-spacing: 0.2rem;
     color: hsl(229, 7%, 55%);
-    margin-bottom:0.5rem ;
+    margin-bottom: 0.5rem;
     margin-left: 2rem;
-}
-.sec span
-{
+  }
+  .sec span {
     color: white;
-}
-.bar
-{
-    background-color: hsl(0, 0%, 0%,55%);
+  }
+  .bar {
+    background-color: hsl(0, 0%, 0%, 55%);
     width: 34rem;
     padding: 0.5rem 0;
-    margin-left: 3rem;
+    margin: auto;
     border-radius: 50px;
-    position: relative; 
-}
-.b1
-{
-    background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    position: relative;
+  }
+  .b1 {
+    background-image: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
     width: 25rem;
     padding: 0.5rem 0;
     margin-left: rem;
     border-radius: 50px;
     position: absolute;
     bottom: 0rem;
-       
-}
-.bot
-{
+  }
+  .bot {
     display: flex;
     justify-content: space-between;
-}
-.bot p
-{
-   color: aliceblue;
-}
-.dot
-{
+  }
+  .bot p {
+    color: aliceblue;
+  }
+  .dot {
     height: 1rem;
-    width:1rem ;
+    width: 1rem;
     background-color: white;
     border-radius: 50%;
     position: absolute;
     bottom: 0rem;
-    left:24rem;
-}
-
-@media(max-width:800px)
-{
-    body
-    {
-        background-image: url('images/bg-mobile.png');
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        height: 100vh;
-        background-size: cover;
-        overflow-y: hidden;
+    left: 24rem;
+  }
+  
+  @media (max-width: 1200px) {
+    #boxes {
+      flex-direction: column;
+      margin: auto;
+      margin-top: 7rem;
+      width: 80%;
     }
-    #boxes{
-        flex-direction: column;
-       align-items: center;
-        margin: auto;
-        margin-top: 15rem;
-        width: 90%;
-       
+  
+    div.first {
+      width: 100%;
+      text-align: left;
     }
-    .sec
-    {
-        width: 26rem;
+    div.sec {
+      width: 100%;
     }
-    .bar
-    {
-        width:20rem ;
+  }
+  
+  @media (max-width: 763px) {
+    body {
+      background-image: url("images/bg-mobile.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 100vh;
+      background-size: cover;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
-    .b1
-    {
-        width: 16rem;
+    #boxes {
+      flex-direction: column;
+      align-items: center;
+      margin: auto 1rem;
+      margin-top: 12rem;
+      width: 90%;
     }
-    .dot
-    {
-        left: 15rem;
+    .sec {
+      width: 26rem;
     }
-    .sec p
-    {
-        padding-right: 2rem;
+    .bar {
+      width: 20rem;
     }
-
-}
+    .b1 {
+      width: 16rem;
+    }
+    .dot {
+      left: 15rem;
+    }
+    .sec p {
+      padding-right: 2rem;
+    }
+  }
