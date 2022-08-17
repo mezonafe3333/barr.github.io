@@ -125,12 +125,14 @@ body
         background-position: 50% 50%;
         height: 100vh;
         background-size: cover;
+        overflow-y: hidden;
     }
     #boxes{
         flex-direction: column;
        align-items: center;
         margin: auto;
         margin-top: 15rem;
+        width: 90%;
        
     }
     .sec
